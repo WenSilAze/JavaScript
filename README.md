@@ -8,11 +8,11 @@ Matheus Tinel
 
 # AJAX
 
-** AJAX / Asynchronous JavaScript and XML, é um conjunto de técnicas de desenvolvimento web que permite que aplicações enviem e recebam dados do servidor de forma assíncrona, sem precisar recarregar a página inteira. Isso proporciona uma experiência de usuário mais fluida e interativa.**
+**AJAX / Asynchronous JavaScript and XML, é um conjunto de técnicas de desenvolvimento web que permite que aplicações enviem e recebam dados do servidor de forma assíncrona, sem precisar recarregar a página inteira. Isso proporciona uma experiência de usuário mais fluida e interativa.**
 
 ## Operação Assíncronada
 
-Uma operação assíncrona é um modelo de execução onde uma tarefa pode ser iniciada e o controle é retornado ao chamador antes que a tarefa seja concluída. Isso permite que outras operações sejam executadas enquanto se aguarda a conclusão da tarefa assíncrona, melhorando a eficiência e a responsividade do sistema. Uma tarefa será executado mesmo que a outra não tiver sido concluída.
+**Uma operação assíncrona é um modelo de execução onde uma tarefa pode ser iniciada e o controle é retornado ao chamador antes que a tarefa seja concluída. Isso permite que outras operações sejam executadas enquanto se aguarda a conclusão da tarefa assíncrona, melhorando a eficiência e a responsividade do sistema. Uma tarefa será executado mesmo que a outra não tiver sido concluída.**
 
 ## XmlHttpRequest:
 
