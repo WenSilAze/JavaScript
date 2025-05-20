@@ -28,6 +28,8 @@ O Fetch é uma API moderna do JavaScript que permite fazer requisições HTTP/HT
 
 Velocidade semelhante ao XmlHttpRequest, porém, mais eficiente em operações de streaming devido ao suporte a ReadableStream, suporta ReadableStream, permitindo melhor desempenho em leitura de dados em fluxo, tem suporte com AbortController e a compatibilidade boa, exceto para navegadores antigos.
 
+Sintaxe Moderna e mais legível, simplifica requisições HTTP, leitura de código mais limpa e direta e o controle de erros simples com .catch().
+
 Promises:
 
 Promises (ou Promessas) são uma abstração utilizada para representar fluxos de ações em código assíncrono. Em JavaScript, uma Promise é um objeto que representa o resultado de uma operação assíncrona, podendo este resultado ser bem-sucedido ou falhar.
@@ -40,19 +42,7 @@ sync/await é uma sintaxe introduzida no JavaScript para simplificar o trabalho 
 
 A velocidade é Igual ao fetch, pois usa Promises por trás, suporta ReadableStream, tem o cancelamento com AbortController e a facilidade de uso.
 
-fetch:
-
-Sintaxe: Moderna e mais legível, simplifica requisições HTTP.
-Leitura de código: Mais limpa e direta.
-Controle de erros: Simples com .catch().
-Promises:
-
-Sintaxe: Requer conhecimento de Promises, usa métodos .then() e .catch() para encadear ações.
-Leitura de código: Pode ficar confuso com muitos encadeamentos.
-Controle de erros: Sim, com .then() e .catch().
-async/await:
-
-A sintaxe é de fácil entendimento e próximo de código síncrono, sendo mais "simples" na leitura do código e o controle de erros simples com : try/catch .
+A sintaxe requer conhecimento de Promises, usa métodos .then() e .catch() para encadear ações, leitura de código pode ficar confuso com muitos encadeamentos e tem o controle de erros com .then() e .catch().
 
 Fontes:
 
