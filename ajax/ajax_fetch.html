@@ -1,28 +1,29 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt_br">
 <head>
     <meta charset="UTF-8">
-    <title>Fetch</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX Fetch Exemplo</title>
 </head>
 <body>
+    <h1>AJAX Fetch Exemplo</h1>
     <button id="fetchButton">Fetch Data</button>
     <div id="result"></div>
 
     <script>
         document.getElementById('fetchButton').addEventListener('click', () => {
-            fetch('https://api.example.com/data')
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
-                    return response.json();
-                })
+            fetch('https://jsonplaceholder.typicode.com/posts')
+                .then(response => response.json())
                 .then(data => {
-                    document.getElementById('result').innerHTML = JSON.stringify(data, null, 2);
+                    const resultDiv = document.getElementById('result');
+                    resultDiv.innerHTML = '';
+                    data.forEach(post => {
+                        const postDiv = document.createElement('div');
+                        postDiv.innerHTML = `<h2>${post.title}</h2><p>${post.body}</p>`;
+                        resultDiv.appendChild(postDiv);
+                    });
                 })
-                .catch(error => {
-                    document.getElementById('result').innerHTML = 'Fetch error: ' + error.message;
-                });
+                .catch(error => console.error('Error fetching data:', error));
         });
     </script>
 </body>
