@@ -56,6 +56,8 @@ https://www.w3schools.com/js/js_api_fetch.asp
 
 https://www.w3schools.com/xml/xml_http.asp
 
+https://www.w3schools.com/Js/js_promise.asp
+
 Site utilizado para o fetch na web:
 
 https://jsonplaceholder.typicode.com/
